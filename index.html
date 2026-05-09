@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Vault ❤️</title>
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="main-card" id="main-menu">
+        <h1>❤️ Our Love Vault</h1>
+        <p class="subtitle">ยินดีต้อนรับนะจ๊ะ เลือกดูความทรงจำของเราได้เลย</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item" onclick="showContent('thanks')">💌 คำขอบคุณจากใจ</div>
+            <div class="menu-item" onclick="showContent('photos')">📸 อัลบั้มรูปคู่ของเรา</div>
+            <div class="menu-item" onclick="showContent('future')">🌟 สิ่งที่อยากทำด้วยกัน</div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 1: คำขอบคุณ -->
+    <div class="main-card content-view" id="view-thanks">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>💌 ขอบคุณนะ...</h2>
+        <p class="thanks-text">
+            ขอบคุณที่คอยเป็นกำลังใจให้กันเสมอ
+            ขอบคุณที่ทำให้ทุกๆ วันกลายเป็นวันที่พิเศษนะ ❤️
+        </p>
+    </div>
+
+    <!-- ส่วนที่ 2: รูปภาพ -->
+    <div class="main-card content-view" id="view-photos">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>📸 Memory Gallery</h2>
+        <div class="photo-placeholder">
+            <img src="https://via.placeholder.com/400x300?text=Your+Photo+1" alt="รูปคู่ 1">
+        </div>
+        <p>เดตแรกของเราที่ลืมไม่ลง ✨</p>
+    </div>
+
+    <!-- ส่วนที่ 3: อนาคต -->
+    <div class="main-card content-view" id="view-future">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>🌟 Future Together</h2>
+        <ul style="text-align: left; line-height: 2;">
+            <li>✅ ไปเที่ยวด้วยกันเยอะๆ</li>
+            <li>✅ แก่ไปด้วยกันอย่างมีความสุข</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ลิงก์ไปยังไฟล์ JavaScript (แนะนำให้วางไว้ก่อนปิด body) -->
+<script src="script.js"></script>
+</body>
+</html>
